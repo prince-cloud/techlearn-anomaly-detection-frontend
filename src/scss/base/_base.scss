@@ -1,0 +1,19 @@
+// Colored sections
+
+.bg-light-grey {
+  background-color: var(--lds-color-grey-100)
+}
+
+.lds-table {
+  tr.clickable {
+    cursor: pointer;
+  }
+
+  tbody tr.clickable:hover td {
+    background-color: #ddd;
+  }
+}
+
+.center {
+  text-align: center;
+}

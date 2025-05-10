@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+// 1. Variables, functions and mixins. Imported first so other modules can use them.
+@use 'abstracts/variables';
+@use 'abstracts/functions';
+@use 'abstracts/mixins';
+
+// 2. Vendors
+//@import 'vendors/normalize';
+
+// 3. Base styling
+@use 'base/base';
+
+// 4. Layouts
+@use 'layout/layout';
+
+// 5. Components
+@use 'components/chatbot.scss';
+@use 'components/chart-generator.scss';
+@use 'components/heatmap.scss';
+@use 'components/select-box.scss';
+
+// 6. Themes
+@use 'themes/custom';
+
+//7. Pages
+@use 'pages/index.scss';
+@use 'pages/files.scss';
+@use 'pages/login';
+@use 'pages/logout';
+@use 'pages/dashboard';
+
+//Responsive
+@use 'breakpoints'

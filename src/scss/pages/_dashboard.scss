@@ -1,0 +1,32 @@
+@use "../abstracts/variables";
+
+.json-container-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1em;
+}
+
+.json-container {
+  border: 1px solid gray;
+  padding: 10px;
+  max-width: 100%;
+  overflow: auto;
+  height: 300px;
+}
+
+.expand-button {
+    padding: 0.5rem;
+    border: 0.15em solid variables.$brand-color;
+    background-color: variables.$white;
+    color: variables.$brand-color;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    min-width: 8rem;
+    transition: all 0.3s ease-in-out;
+    bottom: 0;
+    cursor: pointer;
+    &:hover {
+        background-color: variables.$light-brand-background-color;
+    }
+
+}

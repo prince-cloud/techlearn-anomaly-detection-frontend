@@ -1,0 +1,58 @@
+#files {
+  .file-row:hover {
+    cursor: pointer;
+    background-color: #eee;
+  }
+
+  .filename {
+    text-align: center;
+  }
+
+  .lds-tab-container {
+    overflow: scroll;
+  }
+
+  .app-content {
+    margin-top: 20px;
+  }
+
+  .anomalous-charts .chart-container {
+    width: 200px;
+  }
+
+  .data-display-area {
+    height: calc(100vh - 222px);
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+
+    .lds-tab-container {
+      overflow: scroll;
+      height: calc(100vh - 222px);
+    }
+  }
+
+  #data-display {
+    th button {
+      background: none;
+      border: none;
+      font-weight: bold;
+    }
+  }
+
+  .tab-padded {
+    padding: 1em;
+  }
+
+  .missing-value {
+    color: #e00;
+    height: 2em;
+    width: 2em;
+  }
+
+  .special-characters {
+    color: #d1c819;
+    height: 2em;
+    width: 2em;
+  }
+}

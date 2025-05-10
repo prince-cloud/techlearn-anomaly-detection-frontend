@@ -1,0 +1,33 @@
+
+// Main brand color
+$brand-color: var(--lds-color-primary) !default;
+
+// Lighter brand background color
+$light-brand-background-color: #fbeae9 !default;
+
+// Box shadow color:
+$shadow-color: rgba(0, 0, 0, 0.1) !default;
+
+// White background color
+$white: rgb(255, 255, 255) !default;
+
+// White-grey background color
+$white-grey: rgb(245, 245, 245) !default;
+// Light grey
+$light-grey: rgb(237, 237, 237) !default;
+
+// Medium grey
+$mid-grey: rgb(153, 153, 153) !default;
+
+// Dark grey
+$dark-grey: rgb(68, 68, 68) !default;
+
+// Dark dark grey
+$mid-dark-grey: rgb(34, 34, 34) !default;
+
+// Breakpoints
+$breakpoints: (
+    'small': 320px,
+    'medium': 768px,
+    'large': 1024px,
+) !default;

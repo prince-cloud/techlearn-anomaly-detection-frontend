@@ -1,0 +1,227 @@
+@use "../abstracts/variables";
+
+
+.logout-container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1800px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container{
+  display: flex;
+  background-color: variables.$white;
+  border-radius: 4px;
+  box-shadow: 0 3px 8px variables.$shadow-color;
+  position: inherit;
+  padding: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1800px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  h1 {
+      font-size: 3rem;
+      font-weight: 400;
+  }
+}
+
+  .h2-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    width: fit-content;
+    max-width: 1200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 1em;
+        font-weight: 300;
+    }
+  }
+  
+/* Extra small devices (phones) */
+@media only screen and (max-width:380px) and (min-width: 0px) {
+  .flex-container {
+    margin-top: 6em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 3rem;
+    padding: 1em;
+    flex-direction: column;
+  }
+
+  .content-container {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+  .h2-container {
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+    h2 {
+      font-size: 0.8em;
+      font-weight: 300;
+    }
+  }
+}
+
+/* Small devices (landscape phones) */
+@media only screen and (min-width:380px) and (max-width:576px) {
+  .flex-container {
+    margin-top: 6em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 3rem;
+    padding: 1.5em;
+  }
+
+  .content-container {
+    margin-top: 3em;
+    margin-bottom: 1em;
+
+    h1 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .h2-container {
+    margin-bottom: 2em;
+
+    h2 {
+      font-size: 1em;
+    }
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width:576px) and (max-width: 768px) {
+  .flex-container {
+    margin-top: 6em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 3rem;
+    padding: 1.5em;
+  }
+
+  .content-container {
+    margin-top: 4em;
+    margin-bottom: 2em;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .h2-container {
+    margin-bottom: 2em;
+
+    h2 {
+      font-size: 1em;
+    }
+  }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .flex-container {
+    margin-top: 6em;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-bottom: 3rem;
+    padding: 2em;
+  }
+
+  .content-container {
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .h2-container {
+    margin-bottom: 2em;
+
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media only screen and (min-width:992px) and (max-width: 1200px) {
+  .flex-container {
+    margin-top: 6em;
+    margin-left: 15em;
+    margin-right: 15em;
+    margin-bottom: 3rem;
+    padding: 2em;
+  }
+
+  .content-container {
+    margin-top: 3em;
+    margin-bottom: 2em;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .h2-container {
+    margin-bottom: 2em;
+
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+}
+@media only screen and (min-width:1200px) {
+  .flex-container {
+    margin-top: 6em;
+    margin-left: 16em;
+    margin-right: 16em;
+    margin-bottom: 3rem;
+    padding: 2em;
+  }
+
+  .content-container {
+    margin-top: 3em;
+    margin-bottom: 2em;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .h2-container {
+    margin-bottom: 3em;
+
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+}

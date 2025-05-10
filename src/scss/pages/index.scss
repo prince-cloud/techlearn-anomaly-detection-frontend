@@ -1,0 +1,36 @@
+#big-data {
+  .file-row:hover {
+    cursor: pointer;
+    background-color: #eee;
+  }
+
+  .chatbot-area {
+    display: flex;
+    flex-flow: column;
+    height: calc(100vh - 130px);
+  }
+
+  .pie-container {
+    width: 420px;
+  }
+
+  .data-area {
+    display: flex;
+  }
+
+  .app-content {
+    margin-top: 20px;
+  }
+
+  .data-display-area {
+    height: calc(100vh - 178px);
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+
+    .lds-tab-container {
+      overflow: scroll;
+      height: calc(100vh - 178px);
+    }
+  }
+}

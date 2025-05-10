@@ -1,0 +1,14 @@
+/* LDS Can be themed using the design tokens set up in ux-lds.
+  Tokens can be overwritten in :root for global overrides, or on a specific class
+*/
+
+// Global overwrite of --lds-color-success variable from ux-lds
+:root {
+  --lds-color-success: #3DA470;
+}
+
+// Class specific theme applied to cards with class .card-yellow
+.card-yellow {
+  --lds-color-card-background: yellow;
+  --lds-color-card-foreground: black;
+}
