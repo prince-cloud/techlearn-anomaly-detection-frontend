@@ -1,21 +1,26 @@
+# Use base image
 FROM elilillyco-lilly-docker.jfrog.io/node:lts-alpine
 
-# ENV NODE_ENV development
-
+# Set working directory
 WORKDIR /app
-COPY package.json package-lock.json ./ 
+
+# Copy .npmrc with auth settings first
+COPY .npmrc .npmrc
+
+# Copy package definition files
+COPY package.json package-lock.json ./
+
+# Install dependencies
 RUN npm ci
 
-# COPY package*.json ./
-
-# RUN npm ci
-
+# Copy the rest of the source code
 COPY . .
 
+# Build the application
 RUN npm run build
 
+# Expose the app port
 EXPOSE 3000
 
-# ENV PORT 3000
-
-CMD npm run start
+# Start the application
+CMD ["npm", "run", "start"]
