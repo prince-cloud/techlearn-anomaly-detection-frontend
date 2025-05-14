@@ -1,6 +1,6 @@
 import { AnyNextRequest, apiPost } from "./common"
 
-const AUTH_URL = '/auth'
+const AUTH_URL = '/authentication'
 const TOKEN_URL = `${AUTH_URL}/token`
 
 export const login = (req: AnyNextRequest, email: string, password: string) => {
